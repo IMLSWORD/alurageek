@@ -1,5 +1,9 @@
 # Alurageek
 
+### LINKS:
+[vercel](https://alurageek-gilt.vercel.app/)
+[Linkedin](https://www.linkedin.com/checkpoint/challenge/AgFxbVoUfrpz9wAAAY-YIqcSRg7XiVNWVMl3rEBHXotH5kl5sffnHluSO6Ev3V00Zoe1hBgjD0HvX2K729jhx8IxQhpleQ?ut=1IbqPyvrmEtHg1)
+
 ## Descripción
 
 Alurageek es una aplicación web que permite a los usuarios visualizar una lista de productos relacionados con League of Legends, agregar nuevos productos y eliminar productos existentes. La aplicación está construida utilizando HTML, CSS y JavaScript, y se comunica con una API para realizar las operaciones de CRUD (Crear, Leer, Actualizar y Eliminar) en los productos.
