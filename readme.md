@@ -4,7 +4,7 @@
 [vercel](https://alurageek-gilt.vercel.app/)
 [Linkedin](https://www.linkedin.com/checkpoint/challenge/AgFxbVoUfrpz9wAAAY-YIqcSRg7XiVNWVMl3rEBHXotH5kl5sffnHluSO6Ev3V00Zoe1hBgjD0HvX2K729jhx8IxQhpleQ?ut=1IbqPyvrmEtHg1)
 
-![Build Status](https://img.shields.io/github/workflow/status/user/repo/CI)
+![Build Status](https://img.shields.io/github/workflow/status/SWORDML/alurageek/CI)
 
 
 ## Descripción
