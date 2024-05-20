@@ -1,4 +1,4 @@
-const url = "https://apiserver-v-1-0.vercel.app/product"
+const url = "https://fake-alura-geek.vercel.app/product"
 
 const productList = async () => {
   try {
