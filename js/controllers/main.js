@@ -18,6 +18,7 @@ function createCard(nombre, precio, imagen, id) {
     </div>
   `;
 
+
   const deleteButton = card.querySelector("[data-eliminar]");
   deleteButton.addEventListener("click", (event) => {
     const productId = event.currentTarget.id;
