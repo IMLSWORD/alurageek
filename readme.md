@@ -1,8 +1,8 @@
 # Alurageek
 
 ### LINKS:
-[vercel](./imagenes/iconos/image-1.png)(https://alurageek-gilt.vercel.app/)
-[Linkedin](https://www.linkedin.com/checkpoint/challenge/AgFxbVoUfrpz9wAAAY-YIqcSRg7XiVNWVMl3rEBHXotH5kl5sffnHluSO6Ev3V00Zoe1hBgjD0HvX2K729jhx8IxQhpleQ?ut=1IbqPyvrmEtHg1)
+[![Icono](./imagenes/iconos/image-1.png)](https://www.linkedin.com/checkpoint/challenge/AgFxbVoUfrpz9wAAAY-YIqcSRg7XiVNWVMl3rEBHXotH5kl5sffnHluSO6Ev3V00Zoe1hBgjD0HvX2K729jhx8IxQhpleQ?ut=1IbqPyvrmEtHg1)
+
 
 
 
