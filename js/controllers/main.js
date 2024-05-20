@@ -51,7 +51,7 @@ form.addEventListener("submit", (event) => {
   const precio = document.querySelector("[data-precio]").value;
   const imagen = document.querySelector("[data-imagen]").value;
 
-  servicesProducts.createProducts(nombre, precio, imagen)
+  servicesProducts.creaProductos(nombre, precio, imagen)
     .then((res) => {
       if (res) {
         const newCard = createCard(res.nombre, res.precio, res.imagen, res.id);
