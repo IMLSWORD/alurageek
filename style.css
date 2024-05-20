@@ -1,0 +1,363 @@
+* {
+  width: 100%;
+  box-sizing: border-box;
+  --color-oscuro: #87692a;
+  --color-azul: #000000;
+  --color-gris: #ffffff;
+  --color-cafe-oscuro: #98861d;
+  --color-cafe: #202020;
+  scroll-behavior: smooth;
+
+}
+
+body {
+  width: auto;
+  height: auto;
+  background-color: var(--color-cafe);
+  font-family: "Quicksand", sans-serif;
+}
+
+/* nav */
+
+
+  
+
+.contenedor-header {
+  align-content: center;
+  width: 100%;
+  height: 250px;
+  border-radius: 0 0 30px 30px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+
+.seccion-contenedor-header {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.seccion-contenedor-header a {
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--color-cafe-oscuro);
+}
+
+.introduccion {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.video-intro {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  filter: opacity(20%);
+}
+
+.titulo-introduccion {
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  padding: 20px;
+  color: var(--color-cafe-oscuro);
+  z-index: 2;
+}
+
+.parrafo-intro {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  z-index: 2;
+}
+
+/* cards */
+
+
+
+main {
+  background-color: var(--color-azul);
+  padding: 50px;
+}
+
+
+.titulo-productos{
+  text-align: start;
+  margin-left: 50px;
+  font-size: 40px;
+  color: var(--color-cafe-oscuro);
+  font-family: "Quicksand", sans-serif;
+
+}
+
+.contendor-productos {
+  width: 100%;
+  height: auto;
+  gap: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.seccion-tarjetas {
+  width: 70%;
+  height: auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contenedor-card {
+  width: 250px;
+  height: auto;
+  display: flex;
+  scale: 90%;
+  z-index: 10;
+  border: 4px solid var(--color-cafe-oscuro);
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 5px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  text-wrap: wrap;
+  overflow-wrap: break-word;
+  transition: 500ms all;
+  overflow: hidden;
+
+}
+
+
+
+
+.contenedor-card:hover::before{
+  content: ""; /* Necesario para el seudoelemento */
+  position: absolute;
+  z-index: -1;
+  /* Posicionamiento absoluto para que ocupe todo el elemento padre */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(200deg, var(--color-cafe-oscuro) 10%, transparent 80%);
+  animation: girar 5s linear infinite; 
+  border-radius: 40%;
+  scale: 200%;
+}
+
+@keyframes girar {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.imagen-producto {
+  width: 190px;
+  height: 70%;
+  padding: 5px;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.imagen-producto:hover {
+  scale: 1.1;
+  filter: grayscale(80%);
+}
+
+.nombre-producto {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.precio-seccion-eliminar {
+  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  padding: 0;
+}
+
+.precio-producto {
+  font-size: 40px;
+  padding: 15px;
+  font-weight: bold;
+  color: var(--color-cafe-oscuro);
+}
+
+.eliminar-producto {
+  width: auto;
+  height: auto;
+  padding: 15px;
+  background-color: transparent;
+  border: none;
+}
+
+.icono-borrar {
+  width: auto;
+  height: 50px;
+  padding: 0;
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--color-cafe);
+    filter: invert(50%) sepia(0%) saturate(0%) hue-rotate(100deg) brightness(50%) contrast(103%);
+}
+
+.eliminar-producto:hover {
+  border-radius: 20%;
+  filter: invert(10%) sepia(31%) saturate(6035%) hue-rotate(365deg)
+    brightness(93%) contrast(105%);
+}
+
+/* formulario */
+
+
+
+.seccion-formulario {
+  width: auto;
+  height: 400px;
+  padding: 15px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.titulo-form {
+  text-align: center;
+  font-size: 30px;
+  color: var(--color-cafe-oscuro);
+  font-family: "Quicksand", sans-serif;
+}
+
+.seccion-formulario input {
+  width: 0 auto;
+  height: 50px;
+  padding: 20px;
+  background-color: var(--color-azul);
+  color: var(--color-cafe-oscuro);
+  font-size: 20px;
+  text-wrap: wrap;
+  border-radius: 15px;
+  border: 2px solid var(--color-cafe-oscuro);
+}
+
+.seccion-formulario input::placeholder {
+  color: var(--color-oscuro);
+  font-size: 20px;
+}
+
+
+.seccion-eliminar {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.seccion-eliminar input {
+  font-size: 30px;
+  padding: 0;
+  color: var(--color-cafe-oscuro);
+}
+
+
+.seccion-eliminar input:hover{
+    background-color: var(--color-cafe-oscuro);
+    color: var(--color-azul);
+    border: 2px solid var(--color-oscuro);
+  }
+  
+/* footer */
+
+.seccion-footer {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  padding: 60px;
+  background-color: var(--color-cafe);
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.titulo-footer {
+  font-size: 30px;
+  color: var(--color-cafe-oscuro);
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+}
+
+.parrafo-footer {
+  font-size: 20px;
+  color: var(--color-gris);
+  padding: 5px;
+}
+
+.a-footer{
+    color: var(--color-gris);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.githublogo-footer{
+    width: auto;
+    height: 40px;
+    filter: hue-rotate(200deg);
+}
+
+@media (max-width: 940px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* nav */
+  .titulo-introduccion {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Minecraft", sans-serif;
+    z-index: 2;
+    padding: 20px;
+  }
+
+  .parrafo-intro{
+    padding: 15px;
+    text-wrap: balance;
+  }
+
+  .contendor-productos {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .seccion-tarjetas,
+  .contenedor-card,
+  .seccion-formulario {
+    width: 100%;
+  }
+}
