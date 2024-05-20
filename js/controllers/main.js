@@ -18,12 +18,11 @@ function createCard(nombre, precio, imagen, id) {
     </div>
   `;
 
-
-
   const deleteButton = card.querySelector("[data-eliminar]");
   deleteButton.addEventListener("click", (event) => {
     const productId = event.currentTarget.id;
-    servicesProducts.eliminaProductos(productId)
+    servicesProducts
+      .eliminaProductos(productId)
       .then(() => {
         card.remove();
       })
@@ -37,7 +36,12 @@ const render = async () => {
   try {
     const listProduct = await servicesProducts.listaProductos();
     listProduct.forEach((product) => {
-      const card = createCard(product.nombre, product.precio, product.imagen, product.id);
+      const card = createCard(
+        product.nombre,
+        product.precio,
+        product.imagen,
+        product.id
+      );
       productContainer.appendChild(card);
     });
   } catch (error) {
@@ -51,13 +55,14 @@ form.addEventListener("submit", (event) => {
   const precio = document.querySelector("[data-precio]").value;
   const imagen = document.querySelector("[data-imagen]").value;
 
-  servicesProducts.creaProductos(nombre, precio, imagen)
+  servicesProducts
+    .creaProductos(nombre, precio, imagen)
     .then((res) => {
       if (res) {
         const newCard = createCard(res.nombre, res.precio, res.imagen, res.id);
-        productContainer.appendChild(newCard)
+        productContainer.appendChild(newCard);
       }
-      window.location.reload()
+      window.location.reload();
     })
     .catch((err) => console.error("Error creating product:", err));
 });
