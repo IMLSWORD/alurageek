@@ -1,9 +1,10 @@
 # Alurageek
 
 ### LINKS:
+
 <a href="https://alurageek-gilt.vercel.app/" style="color: yellow; font-size: 20px;">Vercel</a>
 
-<a href="https://www.linkedin.com/checkpoint/challenge/AgFxbVoUfrpz9wAAAY-YIqcSRg7XiVNWVMl3rEBHXotH5kl5sffnHluSO6Ev3V00Zoe1hBgjD0HvX2K729jhx8IxQhpleQ?ut=1IbqPyvrmEtHg1" style="color: blue; font-size: 18px;">Linkedin</a>
+<a href="https://www.linkedin.com/in/diego-armando-zu%C3%B1iga/" style="color: red; font-size: 18px;">Linkedin</a>
 
 
 
