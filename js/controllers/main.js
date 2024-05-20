@@ -22,7 +22,7 @@ function createCard(nombre, precio, imagen, id) {
   const deleteButton = card.querySelector("[data-eliminar]");
   deleteButton.addEventListener("click", (event) => {
     const productId = event.currentTarget.id;
-    servicesProducts.deleteProduct(productId)
+    servicesProducts.eliminaProductos(productId)
       .then(() => {
         card.remove();
       })
@@ -34,7 +34,7 @@ function createCard(nombre, precio, imagen, id) {
 
 const render = async () => {
   try {
-    const listProduct = await servicesProducts.productList();
+    const listProduct = await servicesProducts.listaProductos();
     listProduct.forEach((product) => {
       const card = createCard(product.nombre, product.precio, product.imagen, product.id);
       productContainer.appendChild(card);

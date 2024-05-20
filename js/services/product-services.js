@@ -1,6 +1,6 @@
 const url = "https://fake-alura-geek.vercel.app/product"
 
-const productList = async () => {
+const listaProductos = async () => {
   try {
     const res = await fetch(url);
     if (!res.ok) {
@@ -13,7 +13,7 @@ const productList = async () => {
   }
 };
 
-const createProducts = async (nombre, precio, imagen) => {
+const creaProductos = async (nombre, precio, imagen) => {
   try {
     const res = await fetch(url, {
       method: "POST",
@@ -36,7 +36,7 @@ const createProducts = async (nombre, precio, imagen) => {
   }
 };
 
-const deleteProduct = async (id) => {
+const eliminaProductos = async (id) => {
   try {
     const res = await fetch(`${url}/${id}`, {
       method: "DELETE",
@@ -52,7 +52,7 @@ const deleteProduct = async (id) => {
 };
 
 export const servicesProducts = {
-  productList,
-  createProducts,
-  deleteProduct,
+  listaProductos,
+  creaProductos,
+  eliminaProductos,
 };
