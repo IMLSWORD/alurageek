@@ -384,12 +384,12 @@ main {
     width: 100%;
   }
 
-  .seccion-formulario,.seccion-eliminar, .seccion-eliminar{
+  .seccion-formulario,.seccion-eliminar{
     width: 100%;
   }
 
   .seccion-eliminar input{
-    width: auto;
+    width: 100%;
   }
 
   .seccion-footer{
