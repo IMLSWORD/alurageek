@@ -12,11 +12,12 @@ function createCard(nombre, precio, imagen, id) {
     <h1 class="nombre-producto">${nombre}</h1>
     <div class="precio-seccion-eliminar">
         <p class="precio-producto">${precio}</p>
-        <button id="${id}" class="eliminar-producto" data-eliminar>
+        <button  id="${id}" class="eliminar-producto" data-eliminar>
           <img src="./imagenes/iconos/borrar.png" alt="boton eliminar" class="icono-borrar">
         </button>
     </div>
   `;
+
 
 
   const deleteButton = card.querySelector("[data-eliminar]");
@@ -55,8 +56,9 @@ form.addEventListener("submit", (event) => {
     .then((res) => {
       if (res) {
         const newCard = createCard(res.nombre, res.precio, res.imagen, res.id);
-        productContainer.appendChild(newCard);
+        productContainer.appendChild(newCard)
       }
+      window.location.reload()
     })
     .catch((err) => console.error("Error creating product:", err));
 });
