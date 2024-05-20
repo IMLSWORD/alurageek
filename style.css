@@ -329,6 +329,7 @@ main {
 }
 
 @media (max-width: 940px) {
+
   body {
     overflow-x: hidden;
   }
@@ -343,21 +344,56 @@ main {
     padding: 20px;
   }
 
+
+
   .parrafo-intro{
     padding: 15px;
     text-wrap: balance;
   }
 
-  .contendor-productos {
-    width: auto;
+  .contendor-productos{
+    width: 100%;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0;
+
   }
 
-  .seccion-tarjetas,
-  .contenedor-card,
+
+  .seccion-tarjetas{
+    flex-direction: row;
+    width: auto;
+  }
+
+  .contenedor-card{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+.contenedor-card:hover::before{
+  scale: 300%;
+}
+
+
+  
+
+
   .seccion-formulario {
     width: 100%;
+  }
+
+  .seccion-formulario,.seccion-eliminar, .seccion-eliminar{
+    width: 100%;
+  }
+
+  .seccion-eliminar input{
+    width: auto;
+  }
+
+  .seccion-footer{
+    height: auto;
+    padding: 5px;
   }
 }

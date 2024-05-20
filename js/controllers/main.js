@@ -47,7 +47,6 @@ const render = async () => {
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-
   const nombre = document.querySelector("[data-nombre]").value;
   const precio = document.querySelector("[data-precio]").value;
   const imagen = document.querySelector("[data-imagen]").value;
