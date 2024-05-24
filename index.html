@@ -1,92 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="reset.css"/>
-    <title>Alurageek</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header class="contenedor-header">
-      <div class="seccion-contenedor-header">
-        <a href="">
-          <p>Alurageek</p>
-  
-        </a>
-        
-        </div> 
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="reset.css" />
+  <title>Alurageek</title>
+  <link rel="icon" href="./imagenes/iconos/icon-page.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet" />
+</head>
 
-      <div class="introduccion">
-        <video
-          class="video-intro"
-          src="./imagenes/video3.mp4"
-          loading="lazy"
-          autoplay
-          muted
-          loop
-        ></video>
-        <h1 class="titulo-introduccion">Best prices here!</h1>
-        <p class="parrafo-intro">
-          Productos geek relacionados a league of legends
-        </p>
-      </div>
-    </header>
+<body>
+  <header class="contenedor-header">
+    <div class="seccion-contenedor-header">
+      <a class="titulo-seccion-palette" href="">
+        <p>Alurageek</p>
+        <button class="boton-palette" value="PALETA" type="button" id="changePaletteButton">
+          <img src="./imagenes/iconos/night-icon-theme.png" alt="icono-de-luna-para-cambiiar-tema-de-color-de-la-pagina">
+        </button>
+      </a>
 
-    <main>
+    </div>
+    </div>
+
+    <div class="introduccion">
+      <video class="video-intro" src="./imagenes/video3.mp4" loading="lazy" autoplay muted loop></video>
+      <h1 class="titulo-introduccion">Best prices here!</h1>
+      <p class="parrafo-intro">
+        Productos geek relacionados a league of legends
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <div class="img-bg">
+      <img  src="./imagenes/fondo-walpapper-cards.webp" alt="">
+    </div>
+    <div class="contenedor-main">
       <h2 class="titulo-productos">Productos</h2>
       <div class="contendor-productos">
         <section class="seccion-tarjetas" data-productos></section>
-
+  
         <form class="seccion-formulario" data-form>
           <h2 class="titulo-form">Agrega un producto</h2>
-          <input
-          id="nombre"
-            placeholder="nombre..."
-            type="text"
-            maxlength="30"
-            minlength="2"
-            data-nombre
-          />
-          <input
-          id="precio"
-            placeholder="precio..."
-            type="text"
-            maxlength="4"
-            minlength="2"
-            data-precio
-          />
-          <input
-          id="imagen"
-            placeholder="imagen..."
-            type="text"
-            maxlength="500"
-            minlength="10"
-            data-imagen
-          />
-
+          <input class="input-nombre" id="nombre" placeholder="nombre..." type="text" maxlength="30" minlength="2" data-nombre />
+          <input class="input-precio" id="precio" placeholder="precio..." type="text" maxlength="4" minlength="2" data-precio />
+          <input class="input-imagen" id="imagen" placeholder="imagen..." type="text" maxlength="500" minlength="10" data-imagen />
+  
           <div class="seccion-eliminar">
-            <input value="Publicar" class="enviar-input" type="submit" checked />
+            <input  value="Publicar" class="enviar-input" type="submit" checked />
           </div>
         </form>
       </div>
-    </main>
+    </div>
+   
+  </main>
 
-    <footer>
-      <div class="seccion-footer">
-        <h1 class="titulo-footer">Alurageek | 2024</h1>
-        <p class="parrafo-footer">Creado por Diego Armando</p>
-        <a class="a-footer" href="https://github.com/IMLSWORD" ><img src="./imagenes/iconos/github.png" alt="LOGO DE GITHUB" class="githublogo-footer"></a>
-      </div>
-    </footer>
-    <script src="./js/controllers/main.js" type="module"></script>
-  </body>
+  <footer>
+    <div class="seccion-footer">
+      <h1 class="titulo-footer">Alurageek | 2024</h1>
+      <p class="parrafo-footer">Creado por Diego Armando</p>
+      <a class="a-footer" href="https://github.com/IMLSWORD"><img src="./imagenes/iconos/github.png"
+          alt="LOGO DE GITHUB" class="githublogo-footer"></a>
+    </div>
+  </footer>
+  <script src="./js/controllers/main.js" type="module"></script>
+  <script src="./js/controllers/CambiarPaleta.js"></script>
+</body>
+
 </html>
