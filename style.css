@@ -470,7 +470,7 @@ main {
     font-weight: bold;
     font-family: "Minecraft", sans-serif;
     z-index: 2;
-    padding: 20px;
+    padding: 5px;
   }
 
   .parrafo-intro {
@@ -478,12 +478,20 @@ main {
     text-wrap: balance;
   }
 
+  .titulo-productos{
+    text-align: center;
+    margin: 0 auto;
+  }
   .contendor-productos {
     width: 100%;
     flex-direction: column;
     align-items: center;
     padding: 0;
     margin: 0;
+  }
+
+  .img-bg img {
+   display: none;
   }
 
   .seccion-tarjetas {
