@@ -11,6 +11,9 @@
   --color-gris: #616283;
   --color-cafe-oscuro: #9e7b9b;
   --color-cafe: #cb9cf2;
+  max-width: 1920px;
+  align-content: center;
+  margin: 0 auto;
 }
 
 body {
@@ -108,7 +111,7 @@ body {
 .video-intro {
   position: absolute;
   z-index: -10;
-  width: 100%;
+  width: 1920px;
   height: 200px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
@@ -459,9 +462,15 @@ main {
 }
 
 @media (max-width: 940px) {
+
+
   body {
     overflow-x: hidden;
+  
+   
   }
+
+  
 
   /* nav */
   .titulo-introduccion {
@@ -473,6 +482,10 @@ main {
     padding: 5px;
   }
 
+  main{
+    background: var(--color-azul);
+  }
+  
   .parrafo-intro {
     padding: 15px;
     text-wrap: balance;
@@ -482,12 +495,18 @@ main {
     text-align: center;
     margin: 0 auto;
   }
+
+
+  
+
   .contendor-productos {
     width: 100%;
     flex-direction: column;
     align-items: center;
     padding: 0;
+    background-color: var(--color-cafe);
     margin: 0;
+    border-radius: 20px;
   }
 
   .img-bg img {
